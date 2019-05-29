@@ -24,8 +24,6 @@ h1{
 }   
 
 #zipetc{
-    width: 200 px;
-    height: 10 px;
     font-size: 12px;
 }
  #zipetc p{
@@ -42,21 +40,17 @@ h1{
 }
 
 body #curenttemp{
-    font-size: 50 px;
 }
 
 body #hightemp{
-    font-size: 12 px;
     color: red;
 }
 
 body #lowtemp {
-    font-size: 12 px;
     color: blue;
 }
 
 span{
-    white-space: none;
     display: inline;
 }
 
@@ -86,8 +80,6 @@ span{
     text-align: center;
 }
 ul{
-    width: 200 px;
-    height: 10 px;
     overflow-x: scroll;
     white-space: nowrap;
 }
