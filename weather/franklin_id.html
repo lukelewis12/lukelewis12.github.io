@@ -6,66 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name= "description" content= "updated weather on Franklin, ID">
     <title>Franklin, ID Weather Page</title>
+    <link rel="stylesheet" href="/weather/css/screen.css" media= "screen">
 </head>
 <body>
-        <nav>
-            <a href = "/index.html">Home</a>
-        </nav>    
-    <header>
-    <h1>Franklin, ID</h1>
-</header>
+
+    <header id= "header">
+        <h1><img id="logo" src= "/weather/images/plan-images/logo.jpeg" alt= "Logo">The Weather Site</h1>
+    </header>
+
     <main>
-        <ul>
-            <li><b>Zip:</b> 83237</li>
-            <li><b>Elevation:</b> 1514.246 meters</li>
-            <li><b>Location:</b> 111.79, 42.07</li>
-        </ul>
+        <section id= "basic">
+            <h2>Franklin, ID</h2>
+                <section id="zipetc">
+                    <p><b>Zip:</b> 83237</p>
+                    <p><b>Elevation:</b> 1514.246 meters</p>
+                    <p><b>Location:</b> 111.79, 42.07</p>
+                </section>  
+        </section>
 
-        <h3>Temperature</h3>
-        <p>
-            <b>Now: 40 &#730;</b> <br>
-            <br>
-            <b>High: 64 &#730; Low: 41 &#730;</b> <br>
-            <br>
-            Feels Like: 40 &#730;
-        </p>
+        <section id= "temperature">
+            <h3>Temperature</h3>
+            <p id="currenttemp">
+                40 &#730;F
+            </p>
+            <p id= "hightemp">
+                <b>High: 64 &#730;F</b> 
+            </p>
+            <p id= "lowtemp">
+                    <b>Low: 41 &#730;F</b>
+            </p>        
+            <p id= "feelslike">
+                Feels Like: 41 &#730;F
+            </p>
+        </section>
 
-        <h3>Wind</h3>
-        <p>
-            5 mph <br>
-            Direction: SW <br>
-            Gusts: 10-12 
-        </p>
+        <section id= "wind">
+            <h3>Wind</h3>
+            <p>
+                <img src= "/weather/images/weather-site-images/weather-site-images/images/wind-pointer.png" alt= "windpointer"> <br>
+                5 mph <br>
+                Direction: SW <br>
+                Gusts: 10-12 
+            </p>
+        </section>
 
-        <h3>Rain</h3>
-        <img src= "/weather/images/weather-site-images/weather-site-images/images/rain.jpg" alt= "rain" height= "142" width= "142">
-        <h3>Hourly Forecast</h3>
-        <ul>
-            <li>7:00 am - 41&#730;</li>
-            <li>8:00 am - 41&#730;</li>
-            <li>9:00 am - 41&#730;</li>
-            <li>10:00 am - 41&#730;</li>
-            <li>11:00 am - 41&#730;</li>
-            <li>12:00 pm - 41&#730;</li>
-            <li>1:00 pm - 42&#730;</li>
-            <li>2:00 pm - 44&#730;</li>
-            <li>3:00 pm - 44&#730;</li>
-            <li>4:00 pm - 46&#730;</li>
-            <li>5:00 pm - 49&#730;</li>
-            <li>6:00 pm - 51&#730;</li>
-            <li>7:00 pm - 55&#730;</li>
-        </ul>
+        <section id= "forecast">
+            <h3>Rain</h3>
+            <img src= "/weather/images/weather-site-images/weather-site-images/images/rain.jpg" alt= "rain" height= "142" width= "142">
+        </section>
+        
+        <section id="hourly">
+            <h3 >Hourly Forecast</h3>
+            <ul>
+                <li>7:00 am - 41&#730;F|</li>
+                <li>8:00 am - 41&#730;F|</li>
+                <li>9:00 am - 41&#730;F|</li>
+                <li>10:00 am - 41&#730;F|</li>
+                <li>11:00 am - 41&#730;F|</li>
+                <li>12:00 pm - 41&#730;F|</li>
+                <li>1:00 pm - 42&#730;F|</li>
+                <li>2:00 pm - 44&#730;F|</li>
+                <li>3:00 pm - 44&#730;F|</li>
+                <li>4:00 pm - 46&#730;F|</li>
+                <li>5:00 pm - 49&#730;F|</li>
+                <li>6:00 pm - 51&#730;F|</li>
+                <li>7:00 pm - 55&#730;F</li>
+            </ul>
+        </section>
     </main>
   
     <footer>
             &copy;2019 The Weather Site
     </footer>
+    <br>
 
     <nav>
-            <a href ="franklin_id.html">Current</a>
-            <a href ="search.html">Search</a>
-            <a href ="franklin_id.html">Franklin</a>
-            <a href = "greenville.html">Greenville</a>
+            <a href ="." title= "View weather conditions for current location.">Current</a>
+            <a href ="#" title= "Search for weather conditions in another location.">Search</a>
+            <a href ="franklin_id.html" name= "View weather conditions in Franklin, ID.">Franklin</a>
+            <a href = "%" title= "View weather conditions in Greenville, SC.">Greenville</a>
         </nav>
 </body>
 </html>

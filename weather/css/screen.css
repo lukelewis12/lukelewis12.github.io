@@ -1,0 +1,121 @@
+/* 1. Imports
+2. General
+3. Mobile
+4. Larger Screens */
+
+/* 1. Imports  */
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+@import url('normalize.css');
+
+/* 2. General */
+body{
+    font-family: helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Sansita, sans-serif;
+}
+
+h1{
+    text-align: center;
+    background-color: #0e89d5;
+}   
+
+#zipetc{
+    width: 200 px;
+    height: 10 px;
+    font-size: 12px;
+}
+ #zipetc p{
+     display: inline;
+ }
+
+#temperature{
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 15px;
+    background: transparent;
+    text-align: center;
+}
+
+body #curenttemp{
+    font-size: 50 px;
+}
+
+body #hightemp{
+    font-size: 12 px;
+    color: red;
+}
+
+body #lowtemp {
+    font-size: 12 px;
+    color: blue;
+}
+
+span{
+    white-space: none;
+    display: inline;
+}
+
+#wind{
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 15px;
+    background: transparent;
+    text-align: center;
+}
+
+#forecast{
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 15px;
+    background: transparent;
+    text-align: center;
+}
+
+#hourly{
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+ul{
+    width: 200 px;
+    height: 10 px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+li {
+    display: inline;
+}
+
+footer{
+    background-color:#0e89d5;
+}
+
+nav{
+    text-align: center;
+    word-spacing: 20px;
+    background-color:#0e89d5;
+}
+
+/* 3. Mobile */
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+/* 4. Larger Screens
+    To be added at a later date
+*/
