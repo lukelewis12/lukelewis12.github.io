@@ -108,6 +108,10 @@ h1{
     font-size: 40px;
 }
 
+#currenttemp {
+    font-size: 5em;
+}
+
 /* 4. Larger Screens
     To be added at a later date
 */
