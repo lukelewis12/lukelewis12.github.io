@@ -1,0 +1,65 @@
+#rain-large{
+    visibility: hidden;
+}
+
+#fog-large{
+    visibility: hidden;
+}
+
+#snow-large{
+    visibility: hidden;
+}
+
+#clear-large{
+    visibility: hidden;
+}
+
+#clouds-large{
+    visibility: hidden;
+}
+
+
+@media (min-width: 66.7em){
+
+#rain-mobile{
+    visibility: hidden;
+}
+
+#fog-mobile{
+    visibility: hidden;
+}
+
+#snow-mobile{
+    visibility: hidden;
+}
+
+#clear-mobile{
+    visibility: hidden;
+}
+
+#clouds-mobile{
+    visibility: hidden;
+}
+
+#rain-large{
+    visibility: visible;
+}
+
+#fog-large{
+    visibility: visible;
+}
+
+#snow-large{
+    visibility: visible;
+}
+
+#clear-large{
+    visibility: visible;
+}
+
+#clouds-large{
+    visibility: visible;
+}
+
+
+}
