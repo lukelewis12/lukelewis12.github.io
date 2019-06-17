@@ -9,6 +9,8 @@
 @import url('normalize.css');
 
 /* 2. General */
+
+/* Set the default font and font size. */
 body{
     font-family: helvetica, sans-serif;
     font-size: 20px;
@@ -18,11 +20,13 @@ h1,h2,h3,h4,h5,h6{
     font-family: Sansita, sans-serif;
 }
 
-h1{
+/* Format the header. */
+header{
     text-align: center;
     background-color: #0e89d5;
 }   
 
+/* Set font size and inline format for the zip, elevation, and location. */
 #zipetc{
     font-size: 12px;
 }
@@ -39,8 +43,6 @@ h1{
     text-align: center;
 }
 
-body #curenttemp{
-}
 
 body #hightemp{
     color: red;
@@ -63,6 +65,13 @@ span{
     text-align: center;
 }
 
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url('/weather/images/weather-site-images/weather-site-images/images/wind-pointer.png');
+    z-index: 100;
+    margin: -.6em auto 0;
+}
 #forecast{
     border-style: solid;
     border-width: thin;
@@ -79,7 +88,7 @@ span{
     border-radius: 15px;
     text-align: center;
 }
-ul{
+#hourlyforecast {
     overflow-x: scroll;
     white-space: nowrap;
 }
@@ -91,11 +100,41 @@ footer{
     background-color:#0e89d5;
 }
 
-nav{
+#navbar{
     text-align: center;
     word-spacing: 20px;
     background-color:#0e89d5;
+    display: flex;
+    justify-content: space-around;
 }
+
+/* Rotate the wind dial according to the wind direction.*/
+
+.w{
+    transform:rotate(1deg);
+}
+.nw{
+    transform:rotate(2deg);
+}
+.n{
+    transform:rotate(3deg);
+}
+.ne{
+    transform:rotate(4deg);
+}
+.e{
+    transform:rotate(5deg);
+}
+.se{
+    transform:rotate(6deg);
+}
+.s{
+    transform:rotate(7deg);
+}
+.sw{
+    transform:rotate(8deg);
+}
+
 
 /* 3. Mobile */
 
@@ -112,6 +151,19 @@ h1{
     font-size: 5em;
 }
 
-/* 4. Larger Screens
-    To be added at a later date
-*/
+/* 4. Larger Screens*/
+
+@media screen and (min-width: 800px) 
+{ 
+    header  {
+        height: 125px;
+    }
+    nav{
+        position: absolute;
+        top: 135px;
+    }
+    #curWeather{
+        display: flex;
+        justify-content: space-around;
+    }
+}    
