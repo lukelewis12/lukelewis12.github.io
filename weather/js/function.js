@@ -88,7 +88,6 @@ function windDial(direction){
 
 function getCondition(condition){
     // Get the condition container.
-    const condition = document.getElementById('condition');
 
     //Switch statement to determine the condition.
 
