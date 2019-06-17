@@ -135,6 +135,24 @@ footer{
     transform:rotate(8deg);
 }
 
+#curWeather{
+    background-size: cover;
+    }
+.rain{
+    background-image: url(/weather/images/weather-site-images/optimized-images/rain-mobile.jpg);
+}
+.snow{
+    background-image: url(/weather/images/weather-site-images/optimized-images/snow-mobile.jpg);
+}
+.fog{
+    background-image: url(/weather/images/weather-site-images/optimized-images/fog-mobile.jpg);
+}
+.clear{
+    background-image: url(/weather/images/weather-site-images/optimized-images/clear-mobile.jpg);
+}
+.clouds{
+    background-image: url(/weather/images/weather-site-images/optimized-images/clouds-mobile.jpg);
+}
 
 /* 3. Mobile */
 
@@ -149,6 +167,12 @@ h1{
 
 #currenttemp {
     font-size: 5em;
+}
+
+.rain {
+    background-image: url(/weather/images/weather-site-images/optimized-images/rain-mobile.jpg);
+    background-size: cover;
+
 }
 
 /* 4. Larger Screens*/

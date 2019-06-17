@@ -7,7 +7,11 @@ const temp = 31;
 const speed = 5;
 const direction = "South";
 const meters = 1514.246;
+const condition = "cloudy"
 
+// Call the get condition function.
+
+// getCondition(condition);
 // Call the wind dial function
 
 windDial(direction);
@@ -86,17 +90,24 @@ function windDial(direction){
     }
 }
 
-function getCondition(condition){
-    // Get the condition container.
+// function getCondition(condition){
+//     // Get the condition container.
+//     let condition = document.getElementById("rain");
 
-    //Switch statement to determine the condition.
+    // //Switch statement to determine the condition.
+    // switch(condition){
+    //     case "cloudy":
+    //     case "cloud":
+    //     case "clouded":
+    //         condition.setAttribute("class","clouds");
+    //         break;
+    // }
+    // console.log(condition);
+    // }
 
+// function changeSummaryImage(condition){
 
-}
-
-function changeSummaryImage(condition){
-
-}
+// }
 // Create a function to convert elevation from meters to feet. 
 function convertMeters(meters){
     const feet = document.getElementById('elevation')
