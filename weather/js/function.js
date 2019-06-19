@@ -3,10 +3,10 @@
 console.log('My Java Script is being read.');
 
 // Variables for function use
-const temp = 31;
-const speed = 5;
-const direction = "South";
-const meters = 1514.246;
+let temp = 31;
+let speed = 5;
+let direction = "South";
+let meters = 1514.246;
 let condition = "foggy"
 let conditionreturn;
 
@@ -33,7 +33,7 @@ convertMeters(meters);
 // Calculate the Wind Chill
 
 function buildWC(speed, temp){
-    const feelTemp = document.getElementById('feelslike');
+    let feelTemp = document.getElementById('feelslike');
 
     // Compute the Wind Chill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
@@ -55,7 +55,7 @@ function buildWC(speed, temp){
 
 function windDial(direction){
     // Get the wind dial container.
-    const dial = document.getElementById("dial");
+    let dial = document.getElementById("dial");
     console.log(direction);
 
     // Determine the dial class.
@@ -143,7 +143,7 @@ function changeSummaryImage(conditionreturn){
 
 // Create a function to convert elevation from meters to feet. 
 function convertMeters(meters){
-    const feet = document.getElementById('elevation')
+    let feet = document.getElementById('elevation')
     let m = meters;
     let f = Math.round(m * 3.28);
     console.log(f);
