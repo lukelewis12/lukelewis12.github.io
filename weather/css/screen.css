@@ -110,29 +110,29 @@ footer{
 
 /* Rotate the wind dial according to the wind direction.*/
 
-.w{
-    transform:rotate(1deg);
-}
-.nw{
-    transform:rotate(2deg);
-}
 .n{
-    transform:rotate(3deg);
+    transform:rotate(0deg);
 }
 .ne{
-    transform:rotate(4deg);
+    transform:rotate(45deg);
 }
 .e{
-    transform:rotate(5deg);
+    transform:rotate(90deg);
 }
 .se{
-    transform:rotate(6deg);
+    transform:rotate(135deg);
 }
 .s{
-    transform:rotate(7deg);
+    transform:rotate(180deg);
 }
 .sw{
-    transform:rotate(8deg);
+    transform:rotate(225deg);
+}
+.w{
+    transform:rotate(270deg);
+}
+.nw{
+    transform:rotate(315deg);
 }
 
 #curWeather{
@@ -190,4 +190,21 @@ h1{
         display: flex;
         justify-content: space-around;
     }
+
+    .rain{
+        background-image: url(/weather/images/weather-site-images/optimized-images/rain-large.jpg);
+    }
+    .snow {
+        background-image: url(/weather/images/weather-site-images/optimized-images/snow-large.jpg);
+    }
+    .fog{
+        background-image: url(/weather/images/weather-site-images/optimized-images/fog-large.jpg);
+    }
+    .clear{
+        background-image: url(/weather/images/weather-site-images/optimized-images/clear-large.jpg);
+    }
+    .clouds{
+        background-image: url(/weather/images/weather-site-images/optimized-images/clouds-large.jpg);
+    }
+    
 }    

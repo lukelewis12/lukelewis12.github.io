@@ -7,11 +7,19 @@ const temp = 31;
 const speed = 5;
 const direction = "South";
 const meters = 1514.246;
-const condition = "cloudy"
+let condition = "foggy"
+let conditionreturn;
+
 
 // Call the get condition function.
 
-// getCondition(condition);
+conditionreturn = getCondition(condition);
+console.log(conditionreturn);
+
+// Call the change summary image function.
+
+changeSummaryImage(conditionreturn);
+
 // Call the wind dial function
 
 windDial(direction);
@@ -48,6 +56,7 @@ function buildWC(speed, temp){
 function windDial(direction){
     // Get the wind dial container.
     const dial = document.getElementById("dial");
+    console.log(direction);
 
     // Determine the dial class.
     switch (direction){
@@ -90,24 +99,48 @@ function windDial(direction){
     }
 }
 
-// function getCondition(condition){
-//     // Get the condition container.
-//     let condition = document.getElementById("rain");
+function getCondition(condition){
+    console.log(condition);
+    // Determine the condition category.
+    if (condition.includes("cloud")==true) {return "clouds";
+    }
+    if (condition.includes("rain")==true) {return "rain";
+    }
+    if (condition.includes("wet")==true) {return "rain";
+    }
+    if (condition.includes("clear")==true) {return "clear";
+    }
+    if (condition.includes("sun")==true) {return "clear";
+    }
+    if (condition.includes("fog")==true) {return "fog";
+    }
+    if (condition.includes("snow")==true) {return "snow";
+    }
+    }
 
-    // //Switch statement to determine the condition.
-    // switch(condition){
-    //     case "cloudy":
-    //     case "cloud":
-    //     case "clouded":
-    //         condition.setAttribute("class","clouds");
-    //         break;
-    // }
-    // console.log(condition);
-    // }
+function changeSummaryImage(conditionreturn){
+     condition = document.getElementById("curWeather");
 
-// function changeSummaryImage(condition){
+    switch(conditionreturn){
+        case "rain":
+            condition.setAttribute("class", "rain");
+        break;
+        case "clouds":
+            condition.setAttribute("class", "clouds");
+            break;
+        case "fog":
+            condition.setAttribute("class", "fog");
+            break;
+        case "snow":
+            condition.setAttribute("class", "snow");
+            break;
+        case "clear":
+            condition.setAttribute("class", "clear");
+            break;
+    }
+}
 
-// }
+
 // Create a function to convert elevation from meters to feet. 
 function convertMeters(meters){
     const feet = document.getElementById('elevation')
@@ -115,5 +148,4 @@ function convertMeters(meters){
     let f = Math.round(m * 3.28);
     console.log(f);
     feet.innerHTML = f;
-    
 }
