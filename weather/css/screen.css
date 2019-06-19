@@ -135,6 +135,7 @@ footer{
     transform:rotate(315deg);
 }
 
+/* Set the background images*/
 #curWeather{
     background-size: cover;
     }
@@ -190,6 +191,8 @@ h1{
         display: flex;
         justify-content: space-around;
     }
+
+/* Set the background images*/
 
     .rain{
         background-image: url(/weather/images/weather-site-images/optimized-images/rain-large.jpg);
