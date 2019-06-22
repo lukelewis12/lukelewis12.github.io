@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name= "description" content= "updated weather on Franklin, ID">
-    <title>Franklin, ID Weather Page</title>
+    <title id="page-title"> Weather Page</title>
     <link rel="stylesheet" href="/weather/css/screen.css" media= "screen">
 </head>
 <body>
@@ -13,10 +13,10 @@
     <header>
         <h1><img id="logo" src= "/weather/images/plan-images/logo.jpeg" alt= "Logo">The Weather Site</h1>
     </header>
-
-    <main>
+    <section id="status">Please be patient while I get your weather information.</section>
+    <main id="main-content" class="hide">
         <section id= "basic">
-            <h2>Franklin, ID</h2>
+            <h2 id="contentHeading">Franklin, ID</h2>
                 <section id="zipetc">
                     <p><b>Zip:</b> 83237</p>
                     <p><b>Elevation:</b></p><p id="elevation">1514.246 meters</p>
@@ -41,9 +41,9 @@
             <section id= "wind">
                 <h3>Wind</h3>
                     <div id="dial" class = "w"></div>  
-                    5 mph <br>
-                    Direction: S <br>
-                    Gusts: 10-12 
+                    <p id="wind-speed">5</p>MPH<br><br>
+                    Direction:<p id="direction">S</p> <br>
+                    Gusts: <p id="gusts">10-12</p> 
                 
             </section>
 
@@ -77,14 +77,15 @@
     </footer>
     <br>
 
-    <nav>
+    <nav id="page-nav">
         <ul id= "navbar"> 
             <li><a href ="." title= "View weather conditions for current location.">Current</a></li>
             <li><a href ="#" title= "Search for weather conditions in another location.">Search</a></li>
-            <li><a href ="franklin_id.html" title= "View weather conditions in Franklin, ID.">Franklin</a></li>
+            <li><a href ="/weather/franklin_id.html" title= "View weather conditions in Franklin, ID.">Franklin</a></li>
             <li><a href = "/weather/greenville_sc.html" title= "View weather conditions in Greenville, SC.">Greenville</a></li>
         </ul>
     </nav>
     <script src="js/function.js"></script>
+    <script src="js/localdata.js"></script>
 </body>
 </html>

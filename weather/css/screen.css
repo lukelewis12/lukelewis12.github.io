@@ -11,6 +11,11 @@
 /* 2. General */
 
 /* Set the default font and font size. */
+
+.hide{
+    display: none;
+  }
+  
 body{
     font-family: helvetica, sans-serif;
     font-size: 20px;
