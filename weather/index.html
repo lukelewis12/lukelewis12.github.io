@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name= "description" content= "updated weather on Franklin, ID">
+    <title id="page-title"> Weather Page</title>
+    <link rel="stylesheet" href="/weather/css/screen.css" media= "screen">
+</head>
+<body>
+
+    <header>
+        <h1><img id="logo" src= "/weather/images/plan-images/logo.jpeg" alt= "Logo">The Weather Site</h1>
+    </header>
+    <section id="status">Please be patient while I get your weather information.</section>
+    <main id="main-content" class="hide">
+        <section id= "basic">
+            <h2 id="contentHeading"></h2>
+                <section id="zipetc">
+                    <p><b>Zip:</b> Missing</p>
+                    <p><b>Elevation:</b></p><p id="elevation">1514.246 meters</p>
+                    <p><b>Location:</b></p><p id="location">111.79, 42.07</p>
+                </section>  
+        </section>
+        <div id="curWeather" class="rain">
+            <section id= "temperature">
+                <h3>Temperature</h3>
+                <p id="currenttemp">
+                    40 &#730;F
+                </p>
+                <span id= "hightemp">
+                    <b>High: 64 &#730;F</b> 
+                </span>
+                <span id= "lowtemp">
+                        <b>Low: 41 &#730;F</b>
+                </span>        
+                <p id= "feelslike"></p>
+            </section>
+
+            <section id= "wind">
+                <h3>Wind</h3>
+                    <div id="dial" class = "w"></div>  
+                    <p id="wind-speed">5</p>MPH<br><br>
+                    Direction:<p id="direction">S</p> <br>
+                    Gusts: <p id="gusts">10-12</p> 
+                
+            </section>
+
+            <section id= "forecast">
+                <h3 id="condition">Rain</h3>
+            </section>
+        </div>
+        
+        <section id="hourly">
+            <h3 >Hourly Forecast</h3>
+            <ul id = "hourlyforecast">
+                <li>7:00 am - 41&#730;F|</li>
+                <li>8:00 am - 41&#730;F|</li>
+                <li>9:00 am - 41&#730;F|</li>
+                <li>10:00 am - 41&#730;F|</li>
+                <li>11:00 am - 41&#730;F|</li>
+                <li>12:00 pm - 41&#730;F|</li>
+                <li>1:00 pm - 42&#730;F|</li>
+                <li>2:00 pm - 44&#730;F|</li>
+                <li>3:00 pm - 44&#730;F|</li>
+                <li>4:00 pm - 46&#730;F|</li>
+                <li>5:00 pm - 49&#730;F|</li>
+                <li>6:00 pm - 51&#730;F|</li>
+                <li>7:00 pm - 55&#730;F</li>
+            </ul>
+        </section>
+    </main>
+  
+    <footer>
+            &copy;2019 The Weather Site
+    </footer>
+    <br>
+
+    <nav id="page-nav">
+        <ul id= "navbar"> 
+            <li><a href ="." title= "View weather conditions for current location.">Current</a></li>
+            <li><a href ="#" title= "Search for weather conditions in another location.">Search</a></li>
+            <li><a href ="/weather/franklin_id.html" title= "View weather conditions in Franklin, ID.">Franklin</a></li>
+            <li><a href = "/weather/greenville_sc.html" title= "View weather conditions in Greenville, SC.">Greenville</a></li>
+        </ul>
+    </nav>
+    <script src="js/function.js"></script>
+    <script src="js/geo_loc.js"></script>
+
+    <!-- The class members I worked with were:
+    Bradford Hogge
+    Cotlon Craig -->
+</body>
+</html>
