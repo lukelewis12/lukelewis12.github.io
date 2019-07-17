@@ -1,0 +1,178 @@
+/* 1. Imports
+2. General
+3. Mobile
+4. Larger Screens */
+
+/* 1. Imports */
+@import url('normalize.css');
+
+@import url('https://fonts.googleapis.com/css?family=Stardos+Stencil&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+/* 2. General  */
+
+.hide {
+    display: none !important;
+}
+
+body {
+    background-image: url(../images/site/background.jpg);
+}
+
+div {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    margin-bottom: 0%;
+}
+
+/* h2{
+    background-color: #ffffff;
+    border-bottom-width: medium;
+    border-bottom-color: black;
+} */
+
+h1{
+    font-family: Stardos Stencil, sans-serif;
+    font-size: 60px;
+    color: #de2226;
+}
+
+h3{
+    font-family: Acme, sans-serif;
+    font-size: 27px;
+    color: #de2226;    
+}
+
+h1 + h3 {
+    margin-top: -50px;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+nav {
+    background-color: #de2226; 
+    display:flex;
+    height: 60px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li{
+    padding-right: 10px;
+}
+
+nav ul{
+    margin-top: 0%;
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+ nav li{
+    align-items: flex-start;
+    width: 400px;
+    flex: 0 1 50%;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+footer{
+    font-family: helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#acme-rocket{
+    background-image: url(../images/site/feature.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-end;
+}
+
+#acme-rocket ul {
+ color: #990033;
+ background-color: rgb(179,224,241,0.5); 
+}
+
+#acme-rocket li {
+    list-style:none;
+}
+
+
+#rocket-reviews {
+    font-family: helvetica, sans-serif;
+    font-size: 17px;
+    color: #000000;
+}
+
+#featured-recipes {
+    font-family: helvetica, sans-serif;
+    font-size: px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#featured-recipes div{
+    display: flex;
+    justify-content: center;
+}
+
+.imageList {
+    background-color: #cccccc;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) 
+{ 
+
+    nav li{
+        padding-left: 5px;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+
+    h1 + h3 {
+        margin-top: -80px;
+    }
+
+    h2 {
+        font-size:35px;
+    }
+
+
+
+
+
+
+
+}
