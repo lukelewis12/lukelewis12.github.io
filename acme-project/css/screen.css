@@ -20,9 +20,13 @@ body {
     background-image: url(../images/site/background.jpg);
 }
 
-div {
+#body-div {
     background-color: #ffffff;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
 }
+
 
 header {
     background-color: #ffffff;
@@ -35,21 +39,7 @@ header {
     border-bottom-color: black;
 } */
 
-h1{
-    font-family: Stardos Stencil, sans-serif;
-    font-size: 60px;
-    color: #de2226;
-}
 
-h3{
-    font-family: Acme, sans-serif;
-    font-size: 27px;
-    color: #de2226;    
-}
-
-h1 + h3 {
-    margin-top: -50px;
-}
 
 h2 {
     font-family: Helvetica, sans-serif;
@@ -123,11 +113,15 @@ footer{
 
 #featured-recipes {
     font-family: helvetica, sans-serif;
-    font-size: px;
+    font-size: 15px;
+}
+
+#recipelist{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
 }
 
 #featured-recipes div{
@@ -135,8 +129,39 @@ footer{
     justify-content: center;
 }
 
+#featured-recipes h2 {
+    text-align: left;
+    padding-left: 70px;
+}
+
 .imageList {
     background-color: #cccccc;
+    width: 80%;
+}
+
+#content-image {
+    width: 100%;
+    height: 50%;
+}
+
+#content-description {
+    font-family:helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#made-by-content, #made-by, #reviews, #reviews-content {
+    font-family: helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#price, #price-content {
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+    color: #de2226;
+}
+
+#price-content {
+    font-weight: bold;
 }
 
 
@@ -148,7 +173,25 @@ footer{
 
 @media screen and (min-width: 800px) 
 { 
+    #reviewsRecipes {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
 
+    #rocket-reviews {
+        text-align: left;
+    }
+
+
+    #acme-rocket {
+        background-size: cover;
+        height: 500px;
+    }
+
+    #acme-rocket ul {
+        padding-right: 166px;
+    }
     nav li{
         padding-left: 5px;
     }
@@ -169,8 +212,35 @@ footer{
         font-size:35px;
     }
 
+    #contentPage {
+        display: flex;
+    }
 
+    #contentColumn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 30px;
+    }
 
+    #contentHead {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content-image {
+        width: 75%;
+        height: 75%;
+    }
+
+    footer{
+        margin-top: 75px;
+    }
+
+    #body-div {
+        width: 85%;
+    }
 
 
 

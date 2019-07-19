@@ -79,9 +79,12 @@ pageNav.addEventListener('click', function(evt){
       document.getElementById("reviews-content").innerHTML = reviews;
       document.getElementById("price-content").innerHTML = price;
 
-      
+      // Hide home content and show content page.
       homePage.setAttribute('class', 'hide');
       contentPage.setAttribute('class', '');
+
+      // Change the page title according to the content page being shown. 
+      document.getElementById("title").innerHTML = "ACME | " + name;
     })
     .catch(function(error){
     console.log('There was a fetch problem: ', error.message);
